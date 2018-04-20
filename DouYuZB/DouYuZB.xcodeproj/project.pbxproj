@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FDADB0992089E27A00928DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADB0982089E27A00928DC3 /* AppDelegate.swift */; };
-		FDADB09B2089E27A00928DC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADB09A2089E27A00928DC3 /* ViewController.swift */; };
 		FDADB09E2089E27A00928DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDADB09C2089E27A00928DC3 /* Main.storyboard */; };
 		FDADB0A12089E27A00928DC3 /* DouYuZB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDADB09F2089E27A00928DC3 /* DouYuZB.xcdatamodeld */; };
 		FDADB0A32089E27E00928DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDADB0A22089E27E00928DC3 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		FDADB0952089E27A00928DC3 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDADB0982089E27A00928DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDADB09A2089E27A00928DC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDADB09D2089E27A00928DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDADB0A02089E27A00928DC3 /* DouYuZB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DouYuZB.xcdatamodel; sourceTree = "<group>"; };
 		FDADB0A22089E27E00928DC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,8 +97,7 @@
 		FDADB0972089E27A00928DC3 /* DouYuZB */ = {
 			isa = PBXGroup;
 			children = (
-				FDADB0982089E27A00928DC3 /* AppDelegate.swift */,
-				FDADB09A2089E27A00928DC3 /* ViewController.swift */,
+				FDADB0C92089ECAB00928DC3 /* Classes */,
 				FDADB09C2089E27A00928DC3 /* Main.storyboard */,
 				FDADB0A22089E27E00928DC3 /* Assets.xcassets */,
 				FDADB0A42089E27E00928DC3 /* LaunchScreen.storyboard */,
@@ -126,6 +123,62 @@
 				FDADB0BD2089E27E00928DC3 /* Info.plist */,
 			);
 			path = DouYuZBUITests;
+			sourceTree = "<group>";
+		};
+		FDADB0C92089ECAB00928DC3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FDADB0982089E27A00928DC3 /* AppDelegate.swift */,
+				FDADB0CA2089ECC800928DC3 /* Home */,
+				FDADB0CB2089ECD000928DC3 /* Main */,
+				FDADB0CC2089ECE500928DC3 /* Live */,
+				FDADB0CD2089ECED00928DC3 /* Follow */,
+				FDADB0CE2089ECF800928DC3 /* Profile */,
+				FDADB0CF2089ED0900928DC3 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FDADB0CA2089ECC800928DC3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FDADB0CB2089ECD000928DC3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FDADB0CC2089ECE500928DC3 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		FDADB0CD2089ECED00928DC3 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		FDADB0CE2089ECF800928DC3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FDADB0CF2089ED0900928DC3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDADB09B2089E27A00928DC3 /* ViewController.swift in Sources */,
 				FDADB0A12089E27A00928DC3 /* DouYuZB.xcdatamodeld in Sources */,
 				FDADB0992089E27A00928DC3 /* AppDelegate.swift in Sources */,
 			);
@@ -438,7 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NLGYMJ3T9;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NLGYMJ3T9;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
